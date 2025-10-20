@@ -12,9 +12,9 @@ export function renderCartSummary() {
 
     let matchingProduct = getProduct(productId);
 
-    const deliveryOptionId = cartItem.deliveryOptionsId;
+    let selecteddeliveryOptions = getdeliveryOption(cartItem.deliveryOptionsId);
 
-    let selecteddeliveryOptions = getdeliveryOption(deliveryOptionId);
+    cartItem.deliveryOptionsId = selecteddeliveryOptions.id;
 
     const today = dayjs();
     const deliveryDate = today.add(selecteddeliveryOptions.deliveryDays, 'days');
