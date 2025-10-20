@@ -141,5 +141,14 @@
   .search-button {
     width: 40px;
   }
+  .home-header-right-section{
+  width: auto;
+  }
+  .header-link{
+    padding: 4px;
+  }
+  .cart-quantity{
+    left:20px;
+  }
 }  
 
