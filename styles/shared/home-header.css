@@ -133,3 +133,13 @@
   width: 26px;
   text-align: center;
 }
+
+@media (max-width: 575px) {
+  .home-page-logo {
+    width: 80px;
+  }
+  .search-button {
+    width: 40px;
+  }
+}  
+
