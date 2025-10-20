@@ -82,5 +82,16 @@ export function renderOrdersHtml() {
     document.querySelector('.orders-grid').innerHTML = OrderHTML;
 }
 
+function updateCartQuantity() {
+      let cartQuantity = 0;
+      cart.forEach((cartItem) => {
+        cartQuantity += cartItem.quantity;
+      });
+
+      document.querySelector('.js-cart-quantity')
+        .innerText = cartQuantity;
+    }
+
+updateCartQuantity();
 renderOrdersHtml();
 
