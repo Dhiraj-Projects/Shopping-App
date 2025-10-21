@@ -25,7 +25,7 @@ export function renderpaymentSummary() {
           </div>
 
           <div class="payment-summary-row">
-            <div>Items (3):</div>
+            <div>Items :</div>
             <div class="payment-summary-money"> &#8377; ${Math.round(productPriceCents / 100).toFixed(2)}</div>
           </div>
 
